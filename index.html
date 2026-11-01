@@ -110,11 +110,11 @@
     }
 
     .pulse-glow {
-      animation: pulseGlowAnim 2s infinite alternate;
+      animation: pulseGlowAnim 2.2s infinite alternate;
     }
     @keyframes pulseGlowAnim {
-      from { box-shadow: 0 0 15px rgba(212, 175, 55, 0.3); }
-      to { box-shadow: 0 0 30px rgba(212, 175, 55, 0.7); }
+      from { box-shadow: 0 0 15px rgba(212, 175, 55, 0.25); border-color: rgba(234, 179, 8, 0.6); }
+      to { box-shadow: 0 0 35px rgba(212, 175, 55, 0.65); border-color: rgba(254, 240, 138, 0.95); }
     }
   </style>
 </head>
@@ -144,7 +144,7 @@
   </aside>
 
   <!-- ================= MASTER A4 LANDSCAPE CERTIFICATE ================= -->
-  <div class="certificate-wrapper relative bg-royal-950 text-slate-100 rounded-2xl overflow-hidden box-border guilloche-bg flex flex-col justify-between p-3.5 sm:p-5 print:p-3 print:rounded-none">
+  <div class="certificate-wrapper relative bg-royal-950 text-slate-100 rounded-2xl overflow-hidden box-border guilloche-bg flex flex-col justify-between p-4 sm:p-6 print:p-4 print:rounded-none">
 
     <!-- Outermost Intricate Metallic Gold Border Frame -->
     <div class="absolute inset-2 border-[3px] border-gold-500/80 rounded-xl pointer-events-none"></div>
@@ -191,7 +191,7 @@
     </div>
 
     <!-- ================= 1. CERTIFICATE HEADER SECTION ================= -->
-    <header class="relative z-10 px-6 pt-2 pb-1.5 border-b border-gold-500/30">
+    <header class="relative z-10 px-6 pt-2 pb-2 border-b border-gold-500/30">
       <div class="flex items-center justify-between gap-3">
         
         <!-- Left: Career Dekho Pvt. Ltd. Official Branding with correctly positioned logo -->
@@ -203,14 +203,6 @@
             class="h-10 sm:h-12 w-auto max-w-[210px] object-contain"
             onerror="handleCertLogoError(this)"
           />
-          <div id="certSvgFallback" class="hidden items-center">
-            <svg class="h-9 w-9" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="80" cy="80" r="70" stroke="#15803d" stroke-width="14" fill="none"/>
-              <path d="M 50 115 C 30 95, 30 65, 50 45 C 70 25, 100 25, 120 45" stroke="#15803d" stroke-width="12" fill="none"/>
-              <path d="M 50 110 Q 75 80 120 30" stroke="#15803d" stroke-width="12"/>
-              <path d="M 120 30 L 98 32 M 120 30 L 118 52" stroke="#15803d" stroke-width="10" stroke-linejoin="round"/>
-            </svg>
-          </div>
           <div class="border-l-2 border-emerald-800/40 pl-2.5 text-left">
             <span class="block text-[11px] font-black text-slate-900 tracking-wider uppercase leading-tight">Career Dekho Pvt. Ltd.</span>
             <span class="block text-[9.5px] text-emerald-800 font-bold tracking-wide mt-0.5">अधिकृत राष्ट्रीय वितरक</span>
@@ -219,151 +211,115 @@
 
         <!-- Center: Official Title Badge & Certificate Header -->
         <div class="text-center">
-          <div class="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-gold-500/15 border border-gold-400/50 text-gold-300 text-[9.5px] uppercase font-bold tracking-widest">
+          <div class="inline-flex items-center gap-1.5 px-3.5 py-0.5 rounded-full bg-gold-500/15 border border-gold-400/50 text-gold-300 text-[10px] uppercase font-bold tracking-widest">
             <i class="fa-solid fa-crown text-[8.5px] text-gold-400"></i>
             <span>Official Welcome & Retailer Appointment</span>
             <i class="fa-solid fa-crown text-[8.5px] text-gold-400"></i>
           </div>
-          <h1 class="font-serif text-lg sm:text-2xl font-black text-gold-gradient tracking-wide uppercase mt-0.5">
+          <h1 class="font-serif text-xl sm:text-3xl font-black text-gold-gradient tracking-wide uppercase mt-1">
             Certificate of Retailer Onboarding
           </h1>
-          <p class="text-[9.5px] font-serif tracking-widest text-emerald-200 uppercase font-semibold">
+          <p class="text-[10px] sm:text-[11px] font-serif tracking-widest text-emerald-200 uppercase font-semibold">
             Self Employment Retailer Programme • Swavalamban Abhiyan
           </p>
         </div>
 
         <!-- Right: SJBT Trust Badge -->
         <div class="flex items-center gap-2.5 bg-gradient-to-r from-royal-900 to-royal-850 px-3.5 py-1.5 rounded-xl border border-gold-400/60 shadow-md">
-          <div class="h-8 w-8 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 text-slate-950 flex items-center justify-center font-black text-xs shadow">
+          <div class="h-9 w-9 rounded-full bg-gradient-to-br from-gold-400 to-gold-600 text-slate-950 flex items-center justify-center font-black text-sm shadow">
             <i class="fa-solid fa-shield-halved"></i>
           </div>
           <div class="text-right">
-            <span class="block text-[8px] uppercase tracking-wider text-gold-300 font-semibold leading-none">Initiative Managed By</span>
-            <span class="block text-xs font-black text-white tracking-wide">SJBT</span>
-            <span class="block text-[7.5px] text-emerald-300/80 leading-none">Shri Jain Bandhu Trust</span>
+            <span class="block text-[8.5px] uppercase tracking-wider text-gold-300 font-semibold leading-none">Initiative Managed By</span>
+            <span class="block text-sm font-black text-white tracking-wide mt-0.5">SJBT</span>
+            <span class="block text-[8px] text-emerald-300/80 leading-none">Shri Jain Bandhu Trust</span>
           </div>
         </div>
 
       </div>
 
-      <!-- Reference & Verification Strip -->
-      <div class="flex items-center justify-between text-[8.5px] sm:text-[9px] text-gold-300/85 font-mono mt-1 pt-1 border-t border-gold-500/20 px-1">
+      <!-- Reference & Status Strip -->
+      <div class="flex items-center justify-between text-[9px] text-gold-300/85 font-mono mt-1.5 pt-1 border-t border-gold-500/20 px-1">
         <span>REF NO: <strong class="text-gold-200">SJBT-CD/ONB/2026</strong></span>
         <span>STATUS: <strong class="text-emerald-400 font-sans font-bold"><i class="fa-solid fa-circle-check"></i> VERIFIED & AUTHORIZED</strong></span>
       </div>
     </header>
 
     <!-- ================= 2. CERTIFICATE MAIN BODY ================= -->
-    <main class="relative z-10 px-6 py-2 grid grid-cols-12 gap-4 items-center flex-1">
+    <main class="relative z-10 px-8 py-4 grid grid-cols-12 gap-6 items-center flex-1">
       
-      <!-- Left Column (Span 6): SBJT ID Highlight & Official Citation -->
-      <div class="col-span-6 flex flex-col justify-between h-full py-0.5 space-y-2.5">
+      <!-- Left Column (Span 6): Formal Citation & Retailer Welcome -->
+      <div class="col-span-6 flex flex-col justify-center h-full space-y-4">
         
-        <!-- BADA BADA OFFICIAL SBJT ID DISPLAY -->
-        <div class="relative bg-gradient-to-r from-royal-900 via-royal-850 to-royal-900 border-2 border-gold-400 rounded-2xl p-3 shadow-[0_0_25px_rgba(212,175,55,0.3)] flex items-center justify-between">
-          <div class="flex items-center gap-3">
-            <div class="h-11 w-11 rounded-xl bg-gradient-to-br from-gold-400 to-gold-600 text-slate-950 flex items-center justify-center font-black text-lg shadow flex-shrink-0">
-              <i class="fa-solid fa-key"></i>
-            </div>
-            <div>
-              <div class="flex items-center gap-2">
-                <span class="text-[9px] font-black uppercase tracking-wider text-gold-300 bg-gold-500/20 px-2 py-0.5 rounded border border-gold-400/40">
-                  Step 1 • Copy ID
-                </span>
-                <span class="text-[10px] font-bold text-emerald-200 uppercase tracking-wide">
-                  Your Official SBJT ID (आपकी SBJT आईडी)
-                </span>
-              </div>
-              <div id="sjbtCodeDisplay" class="font-mono text-xl sm:text-2xl font-black text-gold-200 tracking-widest select-all leading-tight mt-0.5">
-                EZYANUB2103BEP1
-              </div>
-            </div>
+        <div class="bg-black/35 border-2 border-gold-500/35 rounded-2xl p-4 shadow-xl">
+          <div class="flex items-center gap-2 text-gold-300 text-xs font-bold uppercase tracking-wider mb-2 border-b border-gold-500/25 pb-1.5">
+            <i class="fa-solid fa-certificate text-gold-400 text-sm"></i>
+            <span>Official Certification Citation</span>
           </div>
-
-          <!-- Copy Button -->
-          <button 
-            onclick="copySJBTCode()" 
-            id="copyBtn" 
-            class="no-print flex items-center gap-1.5 bg-gradient-to-r from-gold-400 via-yellow-400 to-gold-500 hover:from-gold-300 hover:to-gold-400 text-slate-950 font-black text-xs px-4 py-2 rounded-xl shadow-md transition active:scale-95"
-            title="Click to copy your SBJT ID"
-          >
-            <i class="fa-regular fa-copy text-sm"></i>
-            <span id="copyBtnLabel">Copy ID</span>
-          </button>
-        </div>
-
-        <!-- Official Certification Citation -->
-        <div class="bg-black/35 border border-gold-500/35 rounded-2xl p-2.5 px-3.5">
-          <p class="font-hindi text-[11.5px] text-emerald-100 leading-relaxed text-justify">
+          
+          <p class="font-hindi text-[13px] sm:text-[14px] text-emerald-100 leading-relaxed text-justify">
             यह कार्यक्रम <strong class="text-gold-200 font-sans">SJBT (Shri Jain Bandhu Trust)</strong> द्वारा संचालित है, जिसके अंतर्गत 
-            <strong class="text-gold-200 font-sans">Career Dekho Private Limited</strong> को <span class="text-gold-300 font-bold underline decoration-gold-400/50">"पूरे भारत का अधिकृत राष्ट्रीय वितरक (Authorized National Distributor)"</span> नियुक्त कर यह <span class="text-gold-200 font-bold">Self Employment Retailer Programme</span> संचालित किया जा रहा है।
+            <strong class="text-gold-200 font-sans">Career Dekho Private Limited</strong> को <span class="text-gold-300 font-bold underline decoration-gold-400/50">"पूरे भारत का अधिकृत राष्ट्रीय वितरक (Authorized National Distributor)"</span> नियुक्त कर यह <span class="text-gold-200 font-bold">Self Employment Retailer Programme</span> संचालित किया जा रहा है। 
           </p>
-          <p class="text-[9.5px] text-emerald-200/80 font-sans mt-1 tracking-wide leading-tight">
+
+          <p class="text-[10.5px] text-emerald-200/85 font-sans mt-2.5 tracking-wide leading-relaxed">
             <em>This national initiative is operated by SJBT, with Career Dekho Pvt. Ltd. designated as the Exclusive Authorized National Distributor across India.</em>
           </p>
         </div>
 
-        <!-- Step Instructions -->
-        <div class="bg-royal-900/90 border border-gold-500/35 rounded-2xl p-2.5 px-3">
-          <div class="text-[10px] font-bold text-gold-300 uppercase tracking-wider mb-1 flex items-center gap-1.5">
-            <i class="fa-solid fa-circle-check text-gold-400"></i> Easy Login Steps (आसान लॉगिन निर्देश):
+        <!-- Welcome Message Badge -->
+        <div class="bg-gradient-to-r from-royal-900 to-royal-850 border border-gold-400/50 rounded-xl p-3 flex items-center gap-3">
+          <div class="h-9 w-9 rounded-full bg-gold-500/20 text-gold-300 border border-gold-400/40 flex items-center justify-center text-sm flex-shrink-0">
+            <i class="fa-solid fa-handshake"></i>
           </div>
-          <p class="font-hindi text-[11px] text-white/90 leading-snug">
-            1. अपनी <strong>SBJT ID</strong> ऊपर दिए गए बटन से कॉपी करें।<br>
-            2. वेबसाइट लिंक पर क्लिक करके <strong>'Retailer Login'</strong> टैब में जाएं।<br>
-            3. अपनी SBJT ID और मोबाइल नंबर डालकर तुरंत लॉगिन करें और काम शुरू करें।
-          </p>
+          <div>
+            <span class="block text-xs font-hindi font-bold text-white">रिटेलर परिवार में आपका हार्दिक स्वागत एवं अभिनंदन है।</span>
+            <span class="block text-[9.5px] text-emerald-300/80 font-sans">Heartiest congratulations and a warm welcome to our authorized retailer network.</span>
+          </div>
         </div>
 
       </div>
 
-      <!-- Right Column (Span 6): Website Direct Link & Detailed Login Guide Box -->
-      <div class="col-span-6 flex flex-col justify-between h-full py-0.5">
+      <!-- Right Column (Span 6): Prominent "Team Will Contact You Shortly" Showcase Box -->
+      <div class="col-span-6 flex flex-col justify-center h-full">
         
-        <!-- Big Prominent Website Link & Action Card -->
-        <div class="bg-gradient-to-b from-royal-850 via-royal-900 to-royal-950 p-4 rounded-2xl border-2 border-gold-400 shadow-2xl text-center relative flex flex-col justify-between h-full">
+        <div class="pulse-glow bg-gradient-to-b from-[#073223] via-royal-900 to-[#021811] p-5 sm:p-6 rounded-3xl border-2 border-gold-400 shadow-2xl text-center relative flex flex-col justify-center items-center">
           
           <!-- Top Badge -->
-          <div class="inline-flex items-center justify-center gap-1.5 bg-gradient-to-r from-gold-400 to-gold-600 text-slate-950 text-[10px] font-black uppercase px-3 py-1 rounded-full shadow mb-2 tracking-wider self-center">
-            <i class="fa-solid fa-globe text-xs"></i>
-            <span>Official Portal Access Link</span>
+          <div class="inline-flex items-center gap-2 bg-gradient-to-r from-gold-400 to-gold-600 text-slate-950 text-[10.5px] font-black uppercase px-4 py-1 rounded-full shadow-md mb-3 tracking-wider">
+            <i class="fa-solid fa-headset text-xs"></i>
+            <span>Onboarding & Support Desk</span>
           </div>
 
-          <!-- BADA BADA INSTRUCTION BANNER (Hindi + English) -->
-          <div class="bg-emerald-950/80 border-2 border-amber-400/80 rounded-xl p-3 my-1 shadow-inner text-left">
-            <div class="flex items-center gap-2 mb-1.5 text-gold-300 text-xs font-black uppercase tracking-wide border-b border-gold-500/30 pb-1">
-              <i class="fa-solid fa-arrow-right-to-bracket text-gold-400 text-sm"></i>
-              <span>Login & Start Work • काम शुरू करने का तरीका:</span>
-            </div>
+          <!-- Central Icon with Rings -->
+          <div class="h-16 w-16 rounded-full bg-gradient-to-br from-amber-300 via-gold-500 to-amber-700 text-slate-950 flex items-center justify-center text-2xl shadow-xl my-2 border-2 border-amber-200">
+            <i class="fa-solid fa-phone-volume"></i>
+          </div>
+
+          <!-- BADA BADA CONTACT NOTICE (HINDI & ENGLISH) -->
+          <div class="w-full mt-2 space-y-2">
+            <h2 class="font-hindi text-xl sm:text-2xl font-black text-gold-gradient tracking-wide leading-tight">
+              हमारी टीम आपसे जल्द ही संपर्क करेगी
+            </h2>
             
-            <p class="font-hindi text-[12.5px] sm:text-[13px] font-extrabold text-white leading-snug">
-              "अपना <span class="text-gold-300 underline decoration-gold-400">SBJT Code</span> कॉपी करें, नीचे दिए गए लिंक पर क्लिक करके <span class="text-gold-200">Retailer Login</span> में अपना SBJT Code डालें और मोबाइल नंबर डालकर लॉगिन करके तुरंत काम शुरू कर सकते हैं।"
+            <p class="text-sm sm:text-base font-extrabold text-white tracking-wide font-sans uppercase">
+              Our team will contact you shortly.
             </p>
 
-            <p class="text-[9.5px] text-emerald-200 font-sans mt-1.5 leading-tight">
-              <em>Copy your SBJT Code, click the website link below, enter your SBJT Code & mobile number in the Retailer Login tab to start working immediately.</em>
+            <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto my-2"></div>
+
+            <p class="font-hindi text-xs sm:text-[13px] text-emerald-100 font-medium max-w-sm mx-auto leading-relaxed">
+              आपके रिटेलर ऑनबोर्डिंग, पोर्टल वेरिफिकेशन एवं ट्रेनिंग के संबंध में हमारी आधिकारिक सहायता टीम शीघ्र ही आपसे संपर्क स्थापित करेगी।
             </p>
           </div>
 
-          <!-- Direct Website Link Section (Prominent Display & Button) -->
-          <div class="mt-2 bg-black/50 border border-gold-500/50 rounded-xl p-3">
-            <div class="text-xs sm:text-sm font-black text-gold-300 tracking-wide uppercase flex items-center justify-center gap-1.5">
-              <span>Visit our Website:-</span>
-              <span class="text-base text-yellow-300">👇🏻</span>
-            </div>
-            
-            <a 
-              href="https://www.jainbandhutrust.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="pulse-glow mt-2 flex items-center justify-center gap-2 bg-gradient-to-r from-gold-400 via-yellow-400 to-gold-500 hover:from-gold-300 hover:to-gold-400 text-slate-950 font-black text-sm sm:text-base py-2.5 px-4 rounded-xl shadow-xl transition-all duration-200 active:scale-95"
-            >
-              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-              <span class="tracking-wide font-mono">https://www.jainbandhutrust.com</span>
-            </a>
-
-            <span class="block text-[10px] text-emerald-300 font-semibold mt-1.5">
-              ⚡ Click link above to open portal & login directly
+          <!-- Bottom Status Pill -->
+          <div class="mt-4 pt-3 border-t border-gold-500/30 w-full flex items-center justify-between text-[10px] text-emerald-200 font-mono px-2">
+            <span class="flex items-center gap-1.5 text-gold-300 font-bold">
+              <i class="fa-solid fa-clock-rotate-left"></i> Direct Support
+            </span>
+            <span class="text-emerald-400 font-bold uppercase tracking-wider">
+              Priority Callback Queue
             </span>
           </div>
 
@@ -374,25 +330,25 @@
     </main>
 
     <!-- ================= 3. CERTIFICATE FOOTER (SIGNATURES & 3D EMBOSSED GOLD SEAL) ================= -->
-    <footer class="relative z-10 px-6 pt-1.5 pb-1 border-t border-gold-500/30">
+    <footer class="relative z-10 px-8 pt-2 pb-1.5 border-t border-gold-500/30">
       <div class="grid grid-cols-12 items-end justify-between">
         
-        <!-- Left: Authorized Signatory (Career Dekho Pvt. Ltd. - Authorized Distributor) -->
+        <!-- Left: Authorized Signatory (Career Dekho Pvt. Ltd.) -->
         <div class="col-span-4 text-center">
-          <div class="font-cursive text-xl sm:text-2xl text-gold-200 tracking-wide select-none leading-none mb-1">
+          <div class="font-cursive text-2xl text-gold-200 tracking-wide select-none leading-none mb-1">
             Anubhav Dubey
           </div>
-          <div class="w-36 mx-auto border-b border-gold-400/80 mb-0.5"></div>
-          <span class="block text-[10px] font-bold text-white uppercase tracking-wider">Anubhav Dubey</span>
-          <span class="block text-[8px] text-emerald-300 font-semibold leading-tight">Authorized Signatory • Career Dekho Pvt. Ltd.</span>
+          <div class="w-40 mx-auto border-b border-gold-400/80 mb-0.5"></div>
+          <span class="block text-[11px] font-bold text-white uppercase tracking-wider">Anubhav Dubey</span>
+          <span class="block text-[9px] text-emerald-300 font-semibold leading-tight">Authorized Signatory • Career Dekho Pvt. Ltd.</span>
         </div>
 
         <!-- Center: 3D Embossed Gold Foil Seal Medallion -->
         <div class="col-span-4 flex flex-col items-center justify-center relative">
           <div class="relative flex items-center justify-center -mt-2">
             <!-- Ribbon tails behind medallion -->
-            <div class="absolute -bottom-2 -left-2.5 w-4 h-7 bg-gradient-to-b from-amber-600 to-amber-950 rotate-12 ribbon-tail-l"></div>
-            <div class="absolute -bottom-2 -right-2.5 w-4 h-7 bg-gradient-to-b from-amber-600 to-amber-950 -rotate-12 ribbon-tail-r"></div>
+            <div class="absolute -bottom-2 -left-3 w-4 h-8 bg-gradient-to-b from-amber-600 to-amber-950 rotate-12 ribbon-tail-l"></div>
+            <div class="absolute -bottom-2 -right-3 w-4 h-8 bg-gradient-to-b from-amber-600 to-amber-950 -rotate-12 ribbon-tail-r"></div>
             
             <!-- Embossed Round Medallion -->
             <div class="w-14 h-14 rounded-full bg-gradient-to-br from-amber-200 via-gold-400 to-amber-700 p-0.5 shadow-2xl border-2 border-yellow-100 flex items-center justify-center">
@@ -404,40 +360,31 @@
               </div>
             </div>
           </div>
-          <span class="text-[7.5px] text-gold-300 font-bold uppercase tracking-widest mt-1">Authorized Credential</span>
+          <span class="text-[8px] text-gold-300 font-bold uppercase tracking-widest mt-1">Authorized Credential</span>
         </div>
 
         <!-- Right: Mr. Rajeev Jain (Programme Director, SJBT) -->
         <div class="col-span-4 text-center">
-          <div class="font-cursive text-xl sm:text-2xl text-gold-200 tracking-wide select-none leading-none mb-1">
+          <div class="font-cursive text-2xl text-gold-200 tracking-wide select-none leading-none mb-1">
             Rajeev Jain
           </div>
-          <div class="w-36 mx-auto border-b border-gold-400/80 mb-0.5"></div>
-          <span class="block text-[10px] font-bold text-white uppercase tracking-wider">Mr. Rajeev Jain</span>
-          <span class="block text-[8px] text-emerald-300 font-semibold leading-tight">Programme Director • SJBT</span>
+          <div class="w-40 mx-auto border-b border-gold-400/80 mb-0.5"></div>
+          <span class="block text-[11px] font-bold text-white uppercase tracking-wider">Mr. Rajeev Jain</span>
+          <span class="block text-[9px] text-emerald-300 font-semibold leading-tight">Programme Director • SJBT</span>
         </div>
 
       </div>
 
       <!-- Official Disclaimer -->
-      <div class="text-center text-[7.5px] text-emerald-200/60 mt-1">
+      <div class="text-center text-[8px] text-emerald-200/60 mt-1.5">
         Official Digital Appointment Certificate • Operated by SJBT | Authorized National Distributor: Career Dekho Pvt. Ltd. © 2026
       </div>
     </footer>
 
   </div>
 
-  <!-- Interactive Toast Notification -->
-  <div id="toastNotification" class="fixed bottom-6 right-6 z-50 bg-royal-950 text-gold-200 px-4 py-2.5 rounded-xl shadow-2xl border border-gold-400 text-xs font-semibold flex items-center gap-2.5 opacity-0 pointer-events-none transition-all duration-300 translate-y-3">
-    <i class="fa-solid fa-circle-check text-gold-400 text-base"></i>
-    <div>
-      <div class="font-bold text-white">SBJT ID Copied!</div>
-      <div class="text-[10px] text-emerald-200 font-mono">EZYANUB2103BEP1 copied to clipboard. Now click the website link!</div>
-    </div>
-  </div>
-
   <script>
-    // Fail-safe Logo Loader for Certificate: logo_4.png -> logo_3.png -> logo_2.png -> logo.png -> SVG
+    // Fail-safe Logo Loader for Certificate: logo_4.png -> logo_3.png -> logo_2.png -> logo.png -> placeholder
     function handleCertLogoError(img) {
       if (!img.dataset.failStep) {
         img.dataset.failStep = "1";
@@ -451,57 +398,7 @@
       } else if (img.dataset.failStep === "3") {
         img.dataset.failStep = "4";
         img.src = "https://placehold.co/200x65/062319/d4af37?text=CAREER+DEKHO";
-      } else {
-        img.style.display = "none";
-        const svgFallback = document.getElementById("certSvgFallback");
-        if (svgFallback) {
-          svgFallback.classList.remove("hidden");
-          svgFallback.classList.add("flex");
-        }
       }
-    }
-
-    // Copy SBJT Code function
-    function copySJBTCode() {
-      const code = "EZYANUB2103BEP1";
-      const temp = document.createElement("input");
-      temp.value = code;
-      document.body.appendChild(temp);
-      temp.select();
-      try {
-        document.execCommand("copy");
-        showToast();
-
-        const label = document.getElementById("copyBtnLabel");
-        label.innerText = "Copied!";
-        setTimeout(() => {
-          label.innerText = "Copy ID";
-        }, 2200);
-
-        if (typeof confetti === 'function') {
-          confetti({
-            particleCount: 50,
-            spread: 60,
-            origin: { y: 0.6 },
-            colors: ['#D4AF37', '#FEF08A', '#10b981', '#ffffff']
-          });
-        }
-      } catch (err) {
-        console.error("Copy failed", err);
-      }
-      document.body.removeChild(temp);
-    }
-
-    // Toast logic
-    function showToast() {
-      const toast = document.getElementById("toastNotification");
-      toast.classList.remove("opacity-0", "translate-y-3", "pointer-events-none");
-      toast.classList.add("opacity-100", "translate-y-0");
-
-      setTimeout(() => {
-        toast.classList.add("opacity-0", "translate-y-3", "pointer-events-none");
-        toast.classList.remove("opacity-100", "translate-y-0");
-      }, 3000);
     }
 
     // Celebration Confetti
